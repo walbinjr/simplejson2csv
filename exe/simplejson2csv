@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+require 'simplejson2csv'
+Simplejson2csv::CLI.start(ARGV)

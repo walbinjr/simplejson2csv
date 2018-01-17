@@ -1,0 +1,15 @@
+[{
+  "foo": "foo_value",
+  "bar": "bar_value",
+  "foolish": "foolish_value"
+},
+{
+  "foo": "foo_value",
+  "bar": "bar_value",
+  "foolish": "foolish_value"
+},
+{
+  "foo": "foo_value",
+  "foolish": "foolish_value",
+  "@timestamp": "1234"
+}]
