@@ -1,35 +1,36 @@
 # Simplejson2csv
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/simplejson2csv`. To experiment with that code, run `bin/console` for an interactive prompt.
+This command-line-tool was designed to EASILY convert JSON to CSV.
+You can set which fields (keys) you want to output!
+You can choose which separator you want!
 
-TODO: Delete this and the text above, and describe your gem
+Purpose:
+I did a grep in a bunch of log files with different JSON's formats. So I needed to parse then and choose just a few fields that were relevant.
+I wrote a simple ruby file to do this job and I thought:
+"Hmm, why would I publish this on RubyGems?...
+A: Why not?"
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'simplejson2csv'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Just install it:
 
     $ gem install simplejson2csv
 
 ## Usage
 
-TODO: Write usage instructions here
+Help:
+
+    $ simplejson2csv help convert
+
+Convert:
+
+    $ simplejson2csv convert --json=tmp/sample.json --csv=tmp/sample-output.csv
+    --fields="foo bar" --separator="|"
 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/simplejson2csv.
+[Bug reports](https://github.com/walbinjr/simplejson2csv/issues) and [pull requests](https://github.com/walbinjr/simplejson2csv/pulls) are welcome on GitHub at https://github.com/walbinjr/simplejson2csv.

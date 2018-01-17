@@ -11,6 +11,8 @@ module Simplejson2csv
         save_to_csv
       end
 
+      private
+
       def generate_csv_from_json
         json = JSON.parse(File.open(opts[:json]).read)
         json.map do |item|

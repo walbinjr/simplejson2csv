@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Walter Bindilatti Junior"]
   spec.email         = ["walbinjr@gmail.com"]
 
-  spec.summary       = %q{Script to EASILY convert JSON to CSV.}
+  spec.summary       = %q{A command-line tool to EASILY convert JSON to CSV.}
   spec.description   = %q{Use a given JSON and fields names to generate a CSV.}
-  spec.homepage      = "https://github.com/"
+  spec.homepage      = 'https://github.com/walbinjr/simplejson2csv'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
