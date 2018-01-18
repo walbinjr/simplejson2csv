@@ -6,6 +6,7 @@ require 'simplejson2csv/version'
 Gem::Specification.new do |spec|
   spec.name          = 'simplejson2csv'
   spec.version       = Simplejson2csv::VERSION
+  spec.licenses      = ['MIT']
   spec.authors       = ['Walter Bindilatti Junior']
   spec.email         = ['walbinjr@gmail.com']
 
@@ -23,14 +24,14 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'aruba'
-  spec.add_development_dependency 'pry-meta'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'factory_bot'
-  spec.add_development_dependency 'pronto'
-  spec.add_development_dependency 'pronto-rubocop'
-  spec.add_development_dependency 'pronto-flay'
-  spec.add_development_dependency 'pronto-reek'
+  spec.add_development_dependency 'aruba', '~> 0.14'
+  spec.add_development_dependency 'pry-meta', '~> 0.0'
+  spec.add_development_dependency 'simplecov', '~> 0.15'
+  spec.add_development_dependency 'factory_bot', '~> 4.8'
+  spec.add_development_dependency 'pronto', '~> 0.2'
+  spec.add_development_dependency 'pronto-rubocop', '~> 0.2'
+  spec.add_development_dependency 'pronto-flay', '~> 0.2'
+  spec.add_development_dependency 'pronto-reek', '~> 0.2'
 
   spec.add_dependency 'thor', '~> 0.20.0'
 end

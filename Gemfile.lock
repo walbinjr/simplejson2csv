@@ -154,17 +154,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aruba
+  aruba (~> 0.14)
   bundler (~> 1.16)
-  factory_bot
-  pronto
-  pronto-flay
-  pronto-reek
-  pronto-rubocop
-  pry-meta
+  factory_bot (~> 4.8)
+  pronto (~> 0.2)
+  pronto-flay (~> 0.2)
+  pronto-reek (~> 0.2)
+  pronto-rubocop (~> 0.2)
+  pry-meta (~> 0.0)
   rake (~> 10.0)
   rspec (~> 3.0)
-  simplecov
+  simplecov (~> 0.15)
   simplejson2csv!
 
 BUNDLED WITH
