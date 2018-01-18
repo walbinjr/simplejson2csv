@@ -14,14 +14,14 @@ module Simplejson2csv
       private
 
       def generate_csv_from_json
-        json = JSON.parse(File.open(opts[:json]).read)
+        json = JSON.parse(IO.read(opts[:json]))
         json.map do |item|
           fields.map do |field|
             item[field]
           end
         end
-      rescue => e
-        e.inspect
+      rescue => error
+        raise error
       end
 
       def save_to_csv
